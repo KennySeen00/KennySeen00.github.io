@@ -11,6 +11,7 @@
     <header>
         <img src="imagenes/banner.jpg" alt="background" class="banner">
         <a href="#" class="logo">Go Go GalloPipe</a>
+        <div class="toggle"></div>
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -32,9 +33,16 @@
     </section>
     <script>
         window.addEventListener("scroll",function(){
-            const header = document.querySelector('Header');
+            const header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0); 
         });
+
+        const navigation = document.querySelector('nav');
+
+        document.querySelector('.toggle').onClick = function(){
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        };
     </script>
 </body>
 </html>
