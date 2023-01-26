@@ -479,6 +479,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container {
   background: url(../img/about-img.jpg) left top no-repeat;
+  /* gallodesc es la foto */
 }
 
 #about .about-content {
